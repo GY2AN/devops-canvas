@@ -7,9 +7,9 @@ const links = [
 ];
 
 const socials = [
-  { icon: Github, href: "#" },
-  { icon: Linkedin, href: "#" },
-  { icon: Twitter, href: "#" },
+  { icon: Github, href: "https://github.com/GY2AN" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/gyan-prakash-71b081326/" },
+  { icon: Twitter, href: "https://x.com/pgyan237" },
 ];
 
 export default function Footer() {
