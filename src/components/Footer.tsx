@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <a href="#" className="text-foreground font-bold text-lg font-mono">Gyan</a>
             <p className="text-muted-foreground text-xs mt-1 flex items-center gap-1 justify-center md:justify-start">
-              Built with <Heart size={12} className="text-destructive" /> for DevOps
+              Built with <Heart size={12} className="text-destructive" /> by Gyan
             </p>
           </div>
 
