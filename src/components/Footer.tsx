@@ -30,7 +30,7 @@ export default function Footer() {
                 {link.label}
               </a>
             ))}
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors flex items-center gap-1">
+            <a href="/GyanPrakashDevOps.pdf" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary text-sm transition-colors flex items-center gap-1">
               <FileText size={14} /> Resume
             </a>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-6 border-t border-border/30 text-center">
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} DevOps Engineer. All rights reserved.
+            © {new Date().getFullYear()} Gyan Prakash. All rights reserved.
           </p>
         </div>
       </div>

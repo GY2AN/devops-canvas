@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
+import profileImg from "@/assets/profile.png";
 
-const techBadges = ["Docker", "Kubernetes", "AWS", "Terraform", "CI/CD", "Linux"];
+const techBadges = ["Docker", "Kubernetes", "AWS", "Terraform", "CI/CD", "Jenkins", "Ansible", "Linux"];
 
 export default function HeroSection() {
   return (
@@ -27,8 +28,8 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-body text-lg max-w-lg">
-              DevOps Engineer crafting resilient infrastructure, seamless CI/CD pipelines,
-              and cloud-native solutions that scale. Turning complexity into simplicity.
+              DevOps Engineer with hands-on experience in AWS, containerization, and CI/CD automation.
+              Skilled in building, deploying, and maintaining scalable infrastructure using modern DevOps tools and best practices.
             </p>
 
             <div className="flex flex-wrap gap-2">
@@ -73,10 +74,13 @@ export default function HeroSection() {
               <div className="absolute inset-0 rounded-full bg-accent/10 blur-[60px] scale-105" />
 
               {/* Profile image placeholder */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden glassmorphism animate-float">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 via-card to-accent/20 flex items-center justify-center">
-                  <span className="text-6xl sm:text-7xl">👨‍💻</span>
-                </div>
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden glassmorphism animate-float">
+                <img
+                  src={profileImg}
+                  alt="Gyan Prakash - DevOps Engineer"
+                  className="w-full h-full object-cover object-top"
+                  loading="eager"
+                />
               </div>
 
               {/* Floating bubble */}
