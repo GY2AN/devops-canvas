@@ -46,7 +46,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-6 border-t border-border/30 text-center">
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} DevOps Engineer. All rights reserved.
+            © {new Date().getFullYear()} Gyan Prakash. All rights reserved.
           </p>
         </div>
       </div>

@@ -76,11 +76,11 @@ export default function ContactSection() {
           </form>
 
           <div className="md:col-span-2 flex flex-col justify-center gap-6">
-            <a href="mailto:hello@devops.dev" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
+            <a href="mailto:pgyan237@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
               <div className="p-3 rounded-lg glassmorphism group-hover:border-primary/50 transition-all">
                 <Mail size={20} />
               </div>
-              <span className="text-sm">hello@devops.dev</span>
+              <span className="text-sm">pgyan237@gmail.com</span>
             </a>
             <a href="https://github.com/GY2AN" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
               <div className="p-3 rounded-lg glassmorphism group-hover:border-primary/50 transition-all">
