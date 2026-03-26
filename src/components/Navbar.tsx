@@ -9,9 +9,9 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "X" },
-  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/gyan-prakash-71b081326/", label: "LinkedIn" },
+  { icon: Twitter, href: "https://x.com/pgyan237", label: "X" },
+  { icon: Github, href: "https://github.com/GY2AN", label: "GitHub" },
   { icon: BookOpen, href: "#", label: "Blog" },
 ];
 

@@ -82,23 +82,23 @@ export default function ContactSection() {
               </div>
               <span className="text-sm">hello@devops.dev</span>
             </a>
-            <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
+            <a href="https://github.com/GY2AN" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
               <div className="p-3 rounded-lg glassmorphism group-hover:border-primary/50 transition-all">
                 <Github size={20} />
               </div>
-              <span className="text-sm">github.com/devops</span>
+              <span className="text-sm">github.com/GY2AN</span>
             </a>
-            <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
+            <a href="https://www.linkedin.com/in/gyan-prakash-71b081326/" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
               <div className="p-3 rounded-lg glassmorphism group-hover:border-primary/50 transition-all">
                 <Linkedin size={20} />
               </div>
               <span className="text-sm">LinkedIn</span>
             </a>
-            <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
+            <a href="https://x.com/pgyan237" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
               <div className="p-3 rounded-lg glassmorphism group-hover:border-primary/50 transition-all">
                 <Twitter size={20} />
               </div>
-              <span className="text-sm">@devops</span>
+              <span className="text-sm">@pgyan237</span>
             </a>
           </div>
         </motion.div>
