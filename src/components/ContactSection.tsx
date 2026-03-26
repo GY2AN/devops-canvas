@@ -1,15 +1,43 @@
 import { motion } from "framer-motion";
-import { Send, Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Send, Mail, Github, Linkedin, Twitter, Loader2 } from "lucide-react";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Placeholder
-    alert("Message sent! (Demo)");
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from("contact_messages")
+        .insert({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim(),
+        });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message sent!",
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } catch (err) {
+      toast({
+        title: "Failed to send",
+        description: "Something went wrong. Please try again or email me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -68,10 +96,11 @@ export default function ContactSection() {
             </div>
             <button
               type="submit"
-              className="px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover-glow transition-all duration-300 flex items-center gap-2"
+              disabled={isSubmitting}
+              className="px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover-glow transition-all duration-300 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <Send size={16} />
-              Let's Connect
+              {isSubmitting ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
+              {isSubmitting ? "Sending..." : "Let's Connect"}
             </button>
           </form>
 
