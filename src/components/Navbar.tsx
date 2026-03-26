@@ -64,7 +64,9 @@ export default function Navbar() {
               ))}
             </div>
             <a
-              href="#"
+              href="/GyanPrakashDevOps.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover-glow transition-all duration-300 flex items-center gap-2"
             >
               <FileText size={16} />
@@ -111,7 +113,9 @@ export default function Navbar() {
                 ))}
               </div>
               <a
-                href="#"
+                href="/GyanPrakashDevOps.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold"
               >
                 <FileText size={16} />

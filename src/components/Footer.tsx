@@ -30,7 +30,7 @@ export default function Footer() {
                 {link.label}
               </a>
             ))}
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors flex items-center gap-1">
+            <a href="/GyanPrakashDevOps.pdf" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary text-sm transition-colors flex items-center gap-1">
               <FileText size={14} /> Resume
             </a>
           </div>
